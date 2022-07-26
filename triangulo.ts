@@ -1,25 +1,31 @@
-import { Punto } from "./punto";
+// Retos Repaso Fundamentos
 
-class Triangulo {
-  p1: Punto;
-  p2: Punto;
-  p3: Punto;
+        import { Punto } from "./punto";
 
-  constructor(p1: Punto, p2: Punto, p3: Punto) {
-    this.p1 = p1;
-    this.p2 = p2;
-    this.p3 = p3;
-  }
+        class Triangulo {
+          p1: Punto;
+          p2: Punto;
+          p3: Punto;
 
-  public calcularLongitudLados(p1:Punto, p2:Punto, p3:Punto) : number[]{
-    let lengthLados:number[] = [];
+          constructor(p1: Punto, p2: Punto, p3: Punto) {
+            this.p1 = p1;
+            this.p2 = p2;
+            this.p3 = p3;
+          }
 
-    lengthLados.push(p1.calcularDistancia(p2));
-    lengthLados.push(p2.calcularDistancia(p3));
-    lengthLados.push(p3.calcularDistancia(p1));
+          public calcularLongitudLados(
+            p1: Punto,
+            p2: Punto,
+            p3: Punto
+          ): number[] {
+            let lengthLados: number[] = [];
 
-    return lengthLados;
-  }
-}
+            lengthLados.push(p1.calcularDistancia(p2));
+            lengthLados.push(p2.calcularDistancia(p3));
+            lengthLados.push(p3.calcularDistancia(p1));
 
-export {Triangulo}
+            return lengthLados;
+          }
+        }
+
+        export { Triangulo };

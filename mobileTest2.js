@@ -1,34 +1,34 @@
-// Retos Repaso Mobile Test 2
+// Retos Repaso Fundamentos
 
 "use strict";
 exports.__esModule = true;
 var mobile2_1 = require("./mobile2");
 var nokia3210 = new mobile2_1.Mobile2(
-  "Nokia3210",
-  "3210",
-  "Nokia",
+  "Motorola",
+  "G41",
+  "Motorola",
   "128MB",
-  "Negro",
+  "Azul",
   false,
   0,
   50
 );
 var iphone3g = new mobile2_1.Mobile2(
-  "Iphone3g",
-  "i3g",
+  "Iphone 13",
+  "i13",
   "Apple",
-  "16GB",
-  "Blanco",
+  "128GB",
+  "Negro",
   false,
   0,
   150
 );
 var galaxy10 = new mobile2_1.Mobile2(
-  "Galaxy 10",
-  "GT-I900",
-  "Samsung",
-  "16GB",
-  "Rosa",
+  "Xiaomi",
+  "X2022",
+  "Xiaomi",
+  "64GB",
+  "Negro",
   false,
   0,
   250
